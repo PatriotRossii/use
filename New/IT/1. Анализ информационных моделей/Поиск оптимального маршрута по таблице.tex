@@ -1,0 +1,213 @@
+% !TEX TS-program = pdflatex
+% !TEX encoding = UTF-8 Unicode
+
+% This is a simple template for a LaTeX document using the "article" class.
+% See "book", "report", "letter" for other types of document.
+
+\documentclass[11pt]{article} % use larger type; default would be 10pt
+
+\usepackage[utf8]{inputenc} % set input encoding (not needed with XeLaTeX)
+\usepackage[english,russian]{babel}
+
+%%% Examples of Article customizations
+% These packages are optional, depending whether you want the features they provide.
+% See the LaTeX Companion or other references for full information.
+
+%%% PAGE DIMENSIONS
+\usepackage{geometry} % to change the page dimensions
+\geometry{a4paper} % or letterpaper (US) or a5paper or....
+% \geometry{margin=2in} % for example, change the margins to 2 inches all round
+% \geometry{landscape} % set up the page for landscape
+%   read geometry.pdf for detailed page layout information
+
+\usepackage{graphicx} % support the \includegraphics command and options
+
+% \usepackage[parfill]{parskip} % Activate to begin paragraphs with an empty line rather than an indent
+
+%%% PACKAGES
+\usepackage{booktabs} % for much better looking tables
+\usepackage{array} % for better arrays (eg matrices) in maths
+\usepackage{paralist} % very flexible & customisable lists (eg. enumerate/itemize, etc.)
+\usepackage{verbatim} % adds environment for commenting out blocks of text & for better verbatim
+\usepackage{subfig} % make it possible to include more than one captioned figure/table in a single float
+% These packages are all incorporated in the memoir class to one degree or another...
+
+%%% HEADERS & FOOTERS
+\usepackage{fancyhdr} % This should be set AFTER setting up the page geometry
+\pagestyle{fancy} % options: empty , plain , fancy
+\renewcommand{\headrulewidth}{0pt} % customise the layout...
+\lhead{}\chead{}\rhead{}
+\lfoot{}\cfoot{\thepage}\rfoot{}
+
+%%% SECTION TITLE APPEARANCE
+\usepackage{sectsty}
+\allsectionsfont{\sffamily\mdseries\upshape} % (See the fntguide.pdf for font help)
+% (This matches ConTeXt defaults)
+
+%%% ToC (table of contents) APPEARANCE
+\usepackage[nottoc,notlof,notlot]{tocbibind} % Put the bibliography in the ToC
+\usepackage[titles,subfigure]{tocloft} % Alter the style of the Table of Contents
+\renewcommand{\cftsecfont}{\rmfamily\mdseries\upshape}
+\renewcommand{\cftsecpagefont}{\rmfamily\mdseries\upshape} % No bold!
+
+%%% END Article customizations
+
+%%% The "real" document content comes below...
+
+\title{Поиск оптимального маршрута по таблице}
+\author{Lisid Lakonsky}
+%\date{} % Activate to display a given date or no date (if empty),
+         % otherwise the current date is printed 
+
+\begin{document}
+\maketitle
+
+\section{№ \textbf{6794}}
+
+\begin{enumerate}
+	\item A - B - C - D - E - Z = 4 + 3 + 13 + 4 + 8 = 32
+	\item A - B - C - D - F - Z = 4 + 3 + 13 + 7 + 2 = 29
+	\item A - B - C - D - Z = 4 + 3 + 13 + 10 = 30
+\end{enumerate}
+
+Ответ: \textbf{29}
+
+\section{№ \textbf{6794}}
+
+\begin{enumerate}
+	\item A - B - C - D - E - F - Z = 8 + 5 + 3 + 2 + 2 + 3 = 23
+	\item A - B - C - D - E - Z = 8 + 5 + 3 + 2 + 6 = 24
+	\item A - B - D - E - F - Z = 8 + 7 + 2 + 2 + 3 = 22
+\end{enumerate}
+
+Ответ: \textbf{22}
+
+\section{№ \textbf{6321}}
+
+\begin{enumerate}
+	\item A - B - C - D - E - F = 2 + 4 + 3 + 3 + 2 = 14
+	\item A - B - C - D -  F = 2 + 4 + 3 + 6 = 15
+	\item A - B - D - E - F = 2 + 8 + 3 + 2 = 15
+	\item A - B - D - F = 2 + 8 + 6 = 16
+\end{enumerate}
+
+Ответ: \textbf{14}
+
+\section{№ \textbf{3487}}
+
+\begin{enumerate}
+	\item A - D - C - B = 1 + 2 + 4 = 7
+	\item A - D - F - B = 1 + 2 + 5 = 8
+	\item A - F - B = 3 + 5 = 8
+	\item A - F - D - C - B = 3 + 2 + 2 + 4 = 11
+\end{enumerate}
+
+Ответ: \textbf{7}
+
+\section{№ \textbf{7323}}
+
+\begin{enumerate}
+	\item A - B - D - Z = 5 + 21 + 12 = 38
+	\item A - C - D - E - Z = 7 + 13 + 4 + 8  = 32
+	\item A - C - D - F - Z = 7 + 13 + 6 + 2 = 28
+	\item A - C - D - Z = 7 + 13 + 12 = 32
+\end{enumerate}
+
+Ответ: \textbf{28}
+
+\section{№ \textbf{6973}}
+
+\begin{enumerate}
+	\item A - B - C - D - E - Z = 4 + 2 + 13 + 4 + 8  = 23 + 8
+	\item A - B - C - D - F - Z = 4 + 2 + 13 + 7 + 2 = 26 + 2 = 28
+	\item A - B - C - D - Z = 4 + 2 + 13 + 11 = 30
+	\item A - B - C - Z = 4 + 2 + 27 = 33
+	\item A - C - D - E - Z = 10 + 13 + 4 + 8 =35
+\end{enumerate}
+
+Ответ: \textbf{28}
+
+\section{№ \textbf{5261}}
+
+\begin{enumerate}
+	\item A - B - C - D - E - F - Z = 4 + 4 + 2 + 3 + 8 + 4 = 25 
+	\item A - B - C - D - E - Z = 4 + 4 + 2 + 3 + 9 = 22
+	\item A - B - C - D - F - Z = 4 + 4 + 2 + 11 + 4 = 25
+	\item A - B - C - D - Z = 4 + 4 + 2 + 15 = 25
+	\item A - D - E - Z = 15 + 3 + 9 = 27
+	\item A - C - D - E - Z = 10 + 2 + 3 + 9 = 24
+\end{enumerate}
+
+Ответ: \textbf{22}
+
+\section{№ \textbf{5473}}
+
+\begin{enumerate}
+	\item A-B-D-E-F = 3 + 5 + 5 + 4 = 17
+	\item A-B-D-F = 3 + 5 + 11 = 19
+	\item A-D-E-F = 7 + 5 + 4 = 16
+\end{enumerate}
+
+Ответ: \textbf{16}
+
+\section{№ \textbf{7981}}
+
+\begin{enumerate}
+	\item A - C - D - E - F = 4 + 3 + 2 + 5 = 14
+	\item A - D - E - F = 8 + 2 + 5 = 15
+\end{enumerate}
+
+Ответ: \textbf{14}
+
+\section{№ \textbf{5633}}
+
+\begin{enumerate}
+	\item A - B - D - E - F = 1 + 4 + 4 + 3 = 12 
+	\item A - D - E - F = 4 + 4 + 3 = 11
+	\item A - C - D - E - F = 2 + 3 + 4 + 3 = 12
+\end{enumerate}
+
+Ответ: \textbf{11}
+
+\section{№ \textbf{6172}}
+
+\begin{enumerate}
+	\item A - B - C - D - E - Z = 4 + 1 + 2 + 4 + 5 = 16
+\end{enumerate}
+
+Ответ: \textbf{16}
+
+\section{№ \textbf{5793}}
+
+\begin{enumerate}
+	\item A - C - D - E - F = 4 + 2 + 5 + 1 = 12
+\end{enumerate}
+
+Ответ: \textbf{12}
+
+\section{№ \textbf{4704}}
+
+\begin{enumerate}
+	\item A - B - D - E - F - Z = 7 + 7 + 2 + 2 + 3 = 21
+\end{enumerate}
+
+Ответ: \textbf{21}
+
+\section{№ \textbf{4961}}
+
+\begin{enumerate}
+	\item A - B - C - D - E - Z = 4 + 3 + 2 + 4 + 4 = 17
+	\item A - B - C - F - Z = 4 + 3 + 11 + 2 = 20
+\end{enumerate}
+
+Ответ: \textbf{17}
+
+\section{№ \textbf{6442}}
+
+\begin{enumerate}
+	\item A - B - D -  F = 2 + 8 + 6 = 16
+\end{enumerate}
+
+Ответ: \textbf{16}
+
+\end{document}
