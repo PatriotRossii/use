@@ -1,0 +1,140 @@
+% !TEX TS-program = pdflatex
+% !TEX encoding = UTF-8 Unicode
+
+% This is a simple template for a LaTeX document using the "article" class.
+% See "book", "report", "letter" for other types of document.
+
+\documentclass[11pt]{article} % use larger type; default would be 10pt
+
+\usepackage[utf8]{inputenc} % set input encoding (not needed with XeLaTeX)
+\usepackage[english,russian]{babel}
+
+\usepackage{amsmath}
+
+%%% Examples of Article customizations
+% These packages are optional, depending whether you want the features they provide.
+% See the LaTeX Companion or other references for full information.
+
+%%% PAGE DIMENSIONS
+\usepackage{geometry} % to change the page dimensions
+\geometry{a4paper} % or letterpaper (US) or a5paper or....
+% \geometry{margin=2in} % for example, change the margins to 2 inches all round
+% \geometry{landscape} % set up the page for landscape
+%   read geometry.pdf for detailed page layout information
+
+\usepackage{graphicx} % support the \includegraphics command and options
+
+% \usepackage[parfill]{parskip} % Activate to begin paragraphs with an empty line rather than an indent
+
+%%% PACKAGES
+\usepackage{booktabs} % for much better looking tables
+\usepackage{array} % for better arrays (eg matrices) in maths
+\usepackage{paralist} % very flexible & customisable lists (eg. enumerate/itemize, etc.)
+\usepackage{verbatim} % adds environment for commenting out blocks of text & for better verbatim
+\usepackage{subfig} % make it possible to include more than one captioned figure/table in a single float
+% These packages are all incorporated in the memoir class to one degree or another...
+
+%%% HEADERS & FOOTERS
+\usepackage{fancyhdr} % This should be set AFTER setting up the page geometry
+\pagestyle{fancy} % options: empty , plain , fancy
+\renewcommand{\headrulewidth}{0pt} % customise the layout...
+\lhead{}\chead{}\rhead{}
+\lfoot{}\cfoot{\thepage}\rfoot{}
+
+%%% SECTION TITLE APPEARANCE
+\usepackage{sectsty}
+\allsectionsfont{\sffamily\mdseries\upshape} % (See the fntguide.pdf for font help)
+% (This matches ConTeXt defaults)
+
+%%% ToC (table of contents) APPEARANCE
+\usepackage[nottoc,notlof,notlot]{tocbibind} % Put the bibliography in the ToC
+\usepackage[titles,subfigure]{tocloft} % Alter the style of the Table of Contents
+\renewcommand{\cftsecfont}{\rmfamily\mdseries\upshape}
+\renewcommand{\cftsecpagefont}{\rmfamily\mdseries\upshape} % No bold!
+
+%%% END Article customizations
+
+%%% The "real" document content comes below...
+
+\title{Показательные уравнения}
+\author{Lisid Lakonsky}
+%\date{} % Activate to display a given date or no date (if empty),
+         % otherwise the current date is printed 
+
+\begin{document}
+\maketitle
+
+\section{№ \textbf{510820}}
+
+$$(\frac{1}{25})^{x+2} = 5^{x + 5}$$
+$$(5^{-2})^{x+2} = 5^{x + 5}$$
+$$5^{-2x - 4} = 5^{x + 5}$$
+$$-2x - 4 = x + 5$$
+$$-3x = 9$$
+$$x = -3$$
+
+Ответ: \textbf{-3}
+
+\section{№ \textbf{77379}}
+
+$$2^{3 + x} = 0.4 * 5^{x + 3}$$
+$$\frac{2^{3+x}}{5^{x+3}} = 0.4$$
+$$(\frac{2}{5})^{x+3} = \frac{2}{5}$$
+$$x + 3 = 1$$
+$$x = -2$$
+
+Ответ:\textbf{ -2}
+
+\section{№ \textbf{104695}}
+
+$$8^{3 - 2x} = 0.64 * 10^{3 - 2x}$$
+$$\frac{8}{10}^{3 - 2x} = \frac{8}{10}^2$$
+$$3-2x = 2$$
+$$3 - 2 = 2x$$
+$$x = 0.5$$
+
+Ответ: \textbf{0,5}
+
+\section{№ \textbf{510936}}
+
+$$6^{12.5x + 2} = \frac{1}{216}$$
+$$6^{12.5x + 2} = 6^{-3}$$
+$$12.5x = -5$$
+$$x = -\frac{5}{12.5}$$
+$$x = -\frac{1}{2.5} = -0.4$$
+
+Ответ: \textbf{-0,4}
+
+\section{№ \textbf{510401}}
+
+$$(\frac{1}{6})^{6 - 2x} = 36$$
+$$(\frac{1}{6})^{6 - 2x} = (\frac{1}{6})^{-2}$$
+$$6 - 2x = -2$$
+$$8 = 2x$$
+$$x = 4$$
+
+Ответ: \textbf{4}
+
+\section{№ \textbf{26655}}
+
+$$(\frac{1}{9})^{x - 13} = 3$$
+$$(\frac{1}{9})^{x - 13} = (\frac{1}{9})^{-\frac{1}{2}}$$
+$$x - 13 = -\frac{1}{2}$$
+$$x - 12.5 = 0$$
+$$x = 12.5$$
+
+Ответ: \textbf{12,5}
+
+\section{№ \textbf{509082}}
+
+$$7^{18.5x + 0,7} = \frac{1}{343}$$
+$$7^{18.5x + 0.7} = 7^{-3}$$
+$$18.5x + 0.7 = -3$$
+$$18.5x = -3.7$$
+$$x = -\frac{3.7}{18.5}$$
+$$x = -0.2$$
+
+Ответ: \textbf{-0,2}
+
+
+\end{document}

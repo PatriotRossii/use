@@ -1,0 +1,155 @@
+% !TEX TS-program = pdflatex
+% !TEX encoding = UTF-8 Unicode
+
+% This is a simple template for a LaTeX document using the "article" class.
+% See "book", "report", "letter" for other types of document.
+
+\documentclass[11pt]{article} % use larger type; default would be 10pt
+
+\usepackage[utf8]{inputenc} % set input encoding (not needed with XeLaTeX)
+\usepackage[english,russian]{babel}
+
+\usepackage{amsmath}
+
+%%% Examples of Article customizations
+% These packages are optional, depending whether you want the features they provide.
+% See the LaTeX Companion or other references for full information.
+
+%%% PAGE DIMENSIONS
+\usepackage{geometry} % to change the page dimensions
+\geometry{a4paper} % or letterpaper (US) or a5paper or....
+% \geometry{margin=2in} % for example, change the margins to 2 inches all round
+% \geometry{landscape} % set up the page for landscape
+%   read geometry.pdf for detailed page layout information
+
+\usepackage{graphicx} % support the \includegraphics command and options
+
+% \usepackage[parfill]{parskip} % Activate to begin paragraphs with an empty line rather than an indent
+
+%%% PACKAGES
+\usepackage{booktabs} % for much better looking tables
+\usepackage{array} % for better arrays (eg matrices) in maths
+\usepackage{paralist} % very flexible & customisable lists (eg. enumerate/itemize, etc.)
+\usepackage{verbatim} % adds environment for commenting out blocks of text & for better verbatim
+\usepackage{subfig} % make it possible to include more than one captioned figure/table in a single float
+% These packages are all incorporated in the memoir class to one degree or another...
+
+%%% HEADERS & FOOTERS
+\usepackage{fancyhdr} % This should be set AFTER setting up the page geometry
+\pagestyle{fancy} % options: empty , plain , fancy
+\renewcommand{\headrulewidth}{0pt} % customise the layout...
+\lhead{}\chead{}\rhead{}
+\lfoot{}\cfoot{\thepage}\rfoot{}
+
+%%% SECTION TITLE APPEARANCE
+\usepackage{sectsty}
+\allsectionsfont{\sffamily\mdseries\upshape} % (See the fntguide.pdf for font help)
+% (This matches ConTeXt defaults)
+
+%%% ToC (table of contents) APPEARANCE
+\usepackage[nottoc,notlof,notlot]{tocbibind} % Put the bibliography in the ToC
+\usepackage[titles,subfigure]{tocloft} % Alter the style of the Table of Contents
+\renewcommand{\cftsecfont}{\rmfamily\mdseries\upshape}
+\renewcommand{\cftsecpagefont}{\rmfamily\mdseries\upshape} % No bold!
+
+%%% END Article customizations
+
+%%% The "real" document content comes below...
+
+\title{Рациональные уравнения}
+\author{Lisid Lakonsky}
+%\date{} % Activate to display a given date or no date (if empty),
+         % otherwise the current date is printed 
+
+\begin{document}
+\maketitle
+
+\section{№ \textbf{26664}}
+
+$$ \frac{x - 119}{x + 7} = -5 $$
+$$ x - 119 = -5x - 35 $$
+$$ 6x = -35 + 119 $$
+$$ 6x = 84 $$
+$$ x = 14 $$
+
+ОДЗ:
+
+$$ x + 7 != 0 $$
+$$ x != -7 $$
+
+Ответ: \textbf{14}
+
+\section{№ \textbf{26665}}
+
+$$ x = \frac{6x - 15}{x - 2} $$
+$$ x^2 - 2x = 6x - 15 $$
+$$ x^2 = 8x - 15 $$
+$$ x^2 - 8x + 15 = 0 $$
+$$ D = 64 - (4 * 1 * 15) = 64 - 60 = 4 $$
+$$ x_{12} = \frac{8 \pm 2}{2} = [5, 3 $$
+
+ОДЗ:
+
+$$ x - 2 \neq 0 $$
+$$ x \neq 2 $$
+
+Ответ: \textbf{5}
+
+\section{№ \textbf{77366}}
+
+$$\frac{9}{x^2 - 16} = 1$$
+$$9 = x^2 - 16$$
+$$x^2 - 25 = 0$$
+$$(x - 5)(x + 5) = 0$$
+
+Произведение равно нулю когда один из множителей равен нулю. Следовательно,
+
+$$x - 5 = 0$$
+$$x_1 = 5$$
+
+
+$$x + 5 = 0$$
+$$x_2 = -5$$
+
+ОДЗ:
+
+$$x_2 - 16 \neq 0$$
+$$x_2 \neq 16$$
+$$x \neq \pm 4$$
+
+Ответ: \textbf{5}
+
+\section{№ \textbf{77367}}
+
+$$\frac{13x}{2x^2 - 7} = 1$$
+$$13x = 2x^2 - 7$$
+$$-2x^2 + 13x + 7 = 0$$
+$$D = 169 - (4 * (-2) * 7) = 169 + (14 * 4) = 169 + 56 = 225$$
+$$x_{12} = \frac{-13 \pm 15}{-4} = [-0.5, 7$$
+
+Ответ: \textbf{-0.5}
+
+\section{№ \textbf{77372}}
+
+$$\frac{x + 8}{5x + 7} = \frac{x + 8}{7x + 5}$$
+$$\frac{(x+8)(7x+5)}{(5x + 7)(7x + 5)} = \frac{(x+8)(5x + 7)}{(5x + 7)(7x + 5)}$$
+$$\frac{7x^2 + 5x + 56x + 40}{(5x+7)(7x+5)} = \frac{5x^2 + 7x + 40x + 56}{(5x+7)(7x+5)}$$
+$$7x^2 + 5x + 56x + 40 = 5x^2 + 7x + 40x + 56$$
+$$ 7x^2 - 5x^2 + 61x - 47x + 40 - 56 = 0 $$
+$$ 2x^2 + 14x - 16 = 0 $$
+$$ D = 196 - (4 * 2 * (-16)) = 196 + (8 * 16) = 196 + 128 = 324 $$
+$$ x_{12} = \frac{-14 \pm 18}{4} = [1, -8$$
+
+ОДЗ:
+
+$$5x + 7 \neq 0 $$
+$$5x \neq -7$$
+$$x \neq -\frac{7}{5}$$
+
+
+$$7x + 5 \neq 0 $$
+$$7x \neq -5 $$
+$$x \neq -\frac{5}{7}$$
+
+Ответ: \textbf{1}
+\end{document}
