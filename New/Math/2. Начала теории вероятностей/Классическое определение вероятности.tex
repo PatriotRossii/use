@@ -1,0 +1,159 @@
+% !TEX TS-program = pdflatex
+% !TEX encoding = UTF-8 Unicode
+
+% This is a simple template for a LaTeX document using the "article" class.
+% See "book", "report", "letter" for other types of document.
+
+\documentclass[11pt]{article} % use larger type; default would be 10pt
+
+\usepackage[utf8]{inputenc} % set input encoding (not needed with XeLaTeX)
+\usepackage[english,russian]{babel}
+
+\usepackage{amsmath}
+
+%%% Examples of Article customizations
+% These packages are optional, depending whether you want the features they provide.
+% See the LaTeX Companion or other references for full information.
+
+%%% PAGE DIMENSIONS
+\usepackage{geometry} % to change the page dimensions
+\geometry{a4paper} % or letterpaper (US) or a5paper or....
+% \geometry{margin=2in} % for example, change the margins to 2 inches all round
+% \geometry{landscape} % set up the page for landscape
+%   read geometry.pdf for detailed page layout information
+
+\usepackage{graphicx} % support the \includegraphics command and options
+
+% \usepackage[parfill]{parskip} % Activate to begin paragraphs with an empty line rather than an indent
+
+%%% PACKAGES
+\usepackage{booktabs} % for much better looking tables
+\usepackage{array} % for better arrays (eg matrices) in maths
+\usepackage{paralist} % very flexible & customisable lists (eg. enumerate/itemize, etc.)
+\usepackage{verbatim} % adds environment for commenting out blocks of text & for better verbatim
+\usepackage{subfig} % make it possible to include more than one captioned figure/table in a single float
+% These packages are all incorporated in the memoir class to one degree or another...
+
+%%% HEADERS & FOOTERS
+\usepackage{fancyhdr} % This should be set AFTER setting up the page geometry
+\pagestyle{fancy} % options: empty , plain , fancy
+\renewcommand{\headrulewidth}{0pt} % customise the layout...
+\lhead{}\chead{}\rhead{}
+\lfoot{}\cfoot{\thepage}\rfoot{}
+
+%%% SECTION TITLE APPEARANCE
+\usepackage{sectsty}
+\allsectionsfont{\sffamily\mdseries\upshape} % (See the fntguide.pdf for font help)
+% (This matches ConTeXt defaults)
+
+%%% ToC (table of contents) APPEARANCE
+\usepackage[nottoc,notlof,notlot]{tocbibind} % Put the bibliography in the ToC
+\usepackage[titles,subfigure]{tocloft} % Alter the style of the Table of Contents
+\renewcommand{\cftsecfont}{\rmfamily\mdseries\upshape}
+\renewcommand{\cftsecpagefont}{\rmfamily\mdseries\upshape} % No bold!
+
+%%% END Article customizations
+
+%%% The "real" document content comes below...
+
+\title{Классическое определение вероятности}
+\author{Lisid Lakonsky}
+%\date{} % Activate to display a given date or no date (if empty),
+         % otherwise the current date is printed 
+
+\begin{document}
+\maketitle
+
+\section{№ \textbf{325913}}
+
+$$P_n = n!$$
+$$P_9 = 9!$$
+$$P = 1 - \frac{k}{P_9}$$
+$$k = 9 * 2 * 1 * 7!$$
+$$P = 1 - \frac{9 * 2 * 1 * 7!}{9!} = 1 - \frac{1 / 4} = 0.75$$
+
+Ответ: \textbf{0,75}
+
+\section{№ \textbf{320181}}
+
+P = \frac{2}{5} = 0.4
+
+Ответ: \textbf{0.4}
+
+\section{№ \textbf{509110}}
+
+Всего в копилке лежит: $7 + 5 * 2 + 6 * 5 + 2 * 10 = 7 + 10 + 30 + 20 = 67$
+
+Оставшаяся в копилке сумма составит менее 60 рублей в следующих случаях:
+
+\begin{enumerate}
+	\item Если Дина вытащит десятирублевую монету
+\end{enumerate}
+
+Всего монет $20$
+
+Таким образом,
+
+$$P = \frac{2}{20} = 0.1$$
+
+Ответ: \textbf{0.1}
+
+\section{№ \textbf{320183}}
+
+Возможные исходы:
+
+\begin{enumerate}
+	\item101
+	\item 011
+	\item 110
+\end{enumerate}
+
+Всего исходов: $2^3$
+
+$$P(A) = \frac{3}{2^3} = \frac{3}{8} = 0.375$
+
+Ответ: \textbf{0.375}
+
+\section{№ \textbf{283467}}
+
+$$P(A) = \frac{3}{2^3} = 0.375$
+
+Ответ: \textbf{0,375}
+
+\section{№ \textbf{282853}}
+
+Благоприятные исходы: 
+
+\begin{enumerate}
+	\item 2 + 6
+	\item 6 + 2
+	\item 3 + 5
+	\item 5 + 3
+	\item 4 + 4
+\end{enumerate}
+
+Всего исходов: $6^2 = 36$
+
+$$P = \frac{5}{36} = 0,1388$
+
+Ответ: \textbf{0,14}
+
+\section{№ \textbf{282858}}
+
+$$P = \frac{9}{25} = 0.36$
+
+Ответ: \textbf{0.36}
+
+\section{№ \textbf{285924}}
+
+$$P = \frac{3}{10} = 0.3$$
+
+Ответ: \textbf{0,3}
+
+\section{№ \textbf{320189}}
+
+$x = \frac{5000 - 2512}{5000} = 0.498$
+
+Ответ: \textbf{0,498}
+
+\end{document}
