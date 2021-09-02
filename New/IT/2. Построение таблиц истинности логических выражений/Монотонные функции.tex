@@ -1,0 +1,220 @@
+% !TEX TS-program = pdflatex
+% !TEX encoding = UTF-8 Unicode
+
+% This is a simple template for a LaTeX document using the "article" class.
+% See "book", "report", "letter" for other types of document.
+
+\documentclass[11pt]{article} % use larger type; default would be 10pt
+
+\usepackage[utf8]{inputenc} % set input encoding (not needed with XeLaTeX)
+\usepackage[english,russian]{babel}
+
+\usepackage{amsmath}
+
+%%% Examples of Article customizations
+% These packages are optional, depending whether you want the features they provide.
+% See the LaTeX Companion or other references for full information.
+
+%%% PAGE DIMENSIONS
+\usepackage{geometry} % to change the page dimensions
+\geometry{a4paper} % or letterpaper (US) or a5paper or....
+% \geometry{margin=2in} % for example, change the margins to 2 inches all round
+% \geometry{landscape} % set up the page for landscape
+%   read geometry.pdf for detailed page layout information
+
+\usepackage{graphicx} % support the \includegraphics command and options
+
+% \usepackage[parfill]{parskip} % Activate to begin paragraphs with an empty line rather than an indent
+
+%%% PACKAGES
+\usepackage{booktabs} % for much better looking tables
+\usepackage{array} % for better arrays (eg matrices) in maths
+\usepackage{paralist} % very flexible & customisable lists (eg. enumerate/itemize, etc.)
+\usepackage{verbatim} % adds environment for commenting out blocks of text & for better verbatim
+\usepackage{subfig} % make it possible to include more than one captioned figure/table in a single float
+% These packages are all incorporated in the memoir class to one degree or another...
+
+%%% HEADERS & FOOTERS
+\usepackage{fancyhdr} % This should be set AFTER setting up the page geometry
+\pagestyle{fancy} % options: empty , plain , fancy
+\renewcommand{\headrulewidth}{0pt} % customise the layout...
+\lhead{}\chead{}\rhead{}
+\lfoot{}\cfoot{\thepage}\rfoot{}
+
+%%% SECTION TITLE APPEARANCE
+\usepackage{sectsty}
+\allsectionsfont{\sffamily\mdseries\upshape} % (See the fntguide.pdf for font help)
+% (This matches ConTeXt defaults)
+
+%%% ToC (table of contents) APPEARANCE
+\usepackage[nottoc,notlof,notlot]{tocbibind} % Put the bibliography in the ToC
+\usepackage[titles,subfigure]{tocloft} % Alter the style of the Table of Contents
+\renewcommand{\cftsecfont}{\rmfamily\mdseries\upshape}
+\renewcommand{\cftsecpagefont}{\rmfamily\mdseries\upshape} % No bold!
+
+%%% END Article customizations
+
+%%% The "real" document content comes below...
+
+\title{Монотонные функции}
+\author{Lisid Lakonsky}
+%\date{} % Activate to display a given date or no date (if empty),
+         % otherwise the current date is printed 
+
+\begin{document}
+\maketitle
+
+\section{№ \textbf{13478}}
+
+Выражение: $(x \land z) \lor (x \land \lnot{y} \land \lnot{z})$
+
+\vspace{2mm}
+\begin{tabular}{ | l | l | l | l | }
+\hline
+Перем. 1 & Перем. 2 & Перем. 3 & Функция \\ \hline
+??? & ??? & ??? & F \\ \hline
+0 & 1 & 0 & 1 \\ \hline
+0 & 1 & 1 & 1 \\ \hline
+1 & 1 & 1 & 1 \\ \hline
+\end{tabular}
+
+\vspace{2mm}
+
+Результат функции равен единице в следующих случаях:
+
+\begin{enumerate}
+	\item x = 1 и z = 1
+	\item x = 1 и y = 0 и z = 0
+\end{enumerate}
+
+Таким образом, мы видим, рассматривается первый случай, что x - это вторая переменная.
+
+Рассматривая второй случай, мы видим, что z - третья переменная. Таким образом, оставшаяся переменная - y
+
+Ответ: \textbf{yxz}
+
+\section{№ \textbf{13505}}
+
+Выражение: $(x \land \lnot{z}) \lor (x \land y \land z)$
+
+\vspace{2mm}
+\begin{tabular}{ | l | l | l | l | }
+\hline
+Перем. 1 & Перем. 2 & Перем. 3 & Функция \\ \hline
+??? & ??? & ??? & F \\ \hline
+0 & 0 & 1 & 1 \\ \hline
+1 & 0 & 1 & 1 \\ \hline
+1 & 1 & 1 & 1 \\ \hline
+\end{tabular}
+
+\vspace{2mm}
+
+Результат функции равен единице в следующих случаях:
+
+\begin{enumerate}
+	\item x = 1 и z = 0
+	\item x = 1, y = 1, z = 1
+\end{enumerate}
+
+Рассматривая первый случай, мы видим, что третья переменная - это икс.
+
+Рассматривая второй случай, мы видим, что вторая переменная - это зет.
+
+Рассматривая третий случай, мы понимаем, что оставшаяся переменная, первая - это игрек.
+
+Ответ: \textbf{yzx}
+
+\section{№ \textbf{13586}}
+
+Выражение: $\lnot{w} \land z \land (y \rightarrow x)$
+
+\vspace{2mm}
+\begin{tabular}{ | l | l | l | l | l | }
+\hline
+Перем. 1 & Перем. 2 & Перем. 3 & Перем 4. Функция \\ \hline
+??? & ??? & ??? & ??? & F \\ \hline
+1 & 0 & 0 & 0 & 1 \\ \hline
+1 & 0 & 1 & 0 & 1 \\ \hline
+1 & 0 & 1 & 1 & 1 \\ \hline
+\end{tabular}
+
+\vspace{2mm}
+
+Результат функции равен единице в следующих случаях:
+
+\begin{enumerate}
+	\item w = 0, z = 1, y = 1, x = 1
+	\item w = 0, z = 1, y = 0, x = 1
+	\item w = 0, z = 1, y = 0, x = 0
+\end{enumerate}
+
+Рассматривая первый случай, мы понимаем, что первая переменная - это зет, ибо только она всегда равна единице
+
+Рассматривая второй случай, мы понимаем, что третья переменная - это иск.
+
+Рассматривая третий случай, мы понимаем, что вторая переменная - это w, а оставшаяся, четвертая, это игрек.
+
+Ответ: \textbf{zwxy}
+
+\section{№ \textbf{10278}}
+
+Выражение: $(\lnot{x} \land z) \lor (\lnot{x} \land \lnot{y} \land \lnot{z})$
+
+\vspace{2mm}
+\begin{tabular}{ | l | l | l | l | }
+\hline
+Перем. 1 & Перем. 2 & Перем. 3 & Функция \\ \hline
+??? & ??? & ??? & F \\ \hline
+0 & 0 & 0 & 1 \\ \hline
+0 & 0 & 1 & 1 \\ \hline
+0 & 1 & 1 & 1 \\ \hline
+\end{tabular}
+
+\vspace{2mm}
+
+Результат функции равен единице в следующих случаях:
+
+\begin{enumerate}
+	\item x = 0, z = 1
+	\item x = 0, y = 0, z = 0
+\end{enumerate}
+
+Рассматривая первый случай, мы не понимаем ничего.
+
+Рассматривая второй случай, мы понимаем, что третья переменная - это зет
+
+Рассматривая третий случай, мы понимаем, что первая переменная - это икс.
+
+А оставшаяся, вторая переменная, получается, является игреком.
+
+Ответ: \textbf{xyz}
+
+\section{№ \textbf{13613}}
+
+Выражение: $\lnot{x} \land y \land (z \rightarrow w)$
+
+\vspace{2mm}
+\begin{tabular}{ | l | l | l | l | l | }
+\hline
+Перем. 1 & Перем. 2 & Перем. 3 & Перем 4. Функция \\ \hline
+??? & ??? & ??? & ??? & F \\ \hline
+1 & 0 & 0 & 0 & 1 \\ \hline
+1 & 0 & 1 & 0 & 1 \\ \hline
+1 & 0 & 1 & 1 & 1 \\ \hline
+\end{tabular}
+
+\vspace{2mm}
+
+Результат функции равен единице в следующих случаях:
+
+\begin{enumerate}
+	\item x = 0, y = 1, z = 0, w = 1
+	\item x = 0, y = 1, z = 0, w = 0
+	\item x = 0, y = 1, z = 1, w = 1
+\end{enumerate}
+
+Рассматривая всю таблицу целиком, мы понимаем, что первая переменная - это игрек, вторая - иск, третья - w, четвертая - зет.
+
+Ответ: \textbf{yxwz}
+
+\end{document}
